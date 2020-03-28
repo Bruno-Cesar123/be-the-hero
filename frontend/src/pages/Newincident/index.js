@@ -26,6 +26,8 @@ export default function NewIncident() {
             value,
         };
 
+        
+
         try {
 
 
@@ -41,6 +43,7 @@ export default function NewIncident() {
         }
 
     }
+
     
     return (
         <div className="new-incident-container">
@@ -68,7 +71,7 @@ export default function NewIncident() {
                 <textarea
                  placeholder="Descrição" 
                  value={descripion}
-                 onChange={e => setDescripion(e.target.descripion)}
+                 onChange={e => setDescripion(e.target.value)}
                  />
 
                 <input
